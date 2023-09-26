@@ -1,0 +1,28 @@
+{
+  "name": "para_bank",
+  "version": "1.0.0",
+  "description": "automate parabank website using cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "author": "Expleo",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.2.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-xpath": "^2.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+      "step_definitions": "cypress/e2e",
+  "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+
+
+  }
+}
