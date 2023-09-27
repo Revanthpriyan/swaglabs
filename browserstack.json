@@ -1,0 +1,46 @@
+{
+    "auth": {
+        "username": "mageshpoopathi_4fFrCz",
+        "access_key": "S4dxaiHaxx3y2bb6CHxJ"
+    },
+    "browsers": [
+        {
+            "browser":"chrome",
+            "os":"Windows 11",
+            "versions":["latest","latest-1"]
+        },
+        {
+            "browser":"edge",
+            "os":"Windows 11",
+            "versions":["latest"]
+        }
+    ],
+    "run_settings": {
+        "cypress_config_file": "F:/cypress/swaglabs/cypress.config.js",
+        "project_name": "cypress_automation",
+        "build_name": "cypress demo",
+        "specs": ["cypress/e2e/Features/login.feature","cypress/e2e/Features/login/login.js"],
+        "parallels": "2",
+        "npm_dependencies":{
+            "cypress": "^13.2.0",
+            "cypress-cucumber-preprocessor": "^4.3.1",
+            "cypress-xpath": "^2.0.1"
+        }
+    },
+    "package_config_options": {
+        "cypress_options": {
+            "testFiles": "**/*.feature",
+            "chromeWebSecurity": false
+        },             
+        "cypress-cucumber-preprocessor_options": {
+            "nonGlobalStepDefinitions": true,
+            "step_definitions": "cypress/e2e"
+        }           
+    },
+    "connection_settings": {
+        "local": false,
+        "local_identifier": null,
+        "local_mode": null,
+        "local_config_file": null
+    }
+}
