@@ -4,7 +4,8 @@
   "description": "automate parabank website using cypress",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run"
+    "test": "npx cypress run",
+    "cypress:browserStack":"browserstack-cypress run --sync --spec cypress/e2e/Features/login.feature"
   },
   "author": "Expleo",
   "license": "ISC",
