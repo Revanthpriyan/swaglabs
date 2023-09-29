@@ -1,6 +1,6 @@
 import {Given, When, Then } from "cypress-cucumber-preprocessor/steps";
-import {DummyValues} from "F:/cypress/swaglabs/cypress/helper/utils.js"
-import {loginMethod,invalidUserName,invalidPassword,invalidData,assertExistElements,invalidAssertion, logging, waitforElement} from "F:/cypress/swaglabs/cypress/pages/loginElements.js"
+import {DummyValues} from "../utilsClass/helper/utils.js"
+import {loginMethod,invalidUserName,invalidPassword,invalidData,assertExistElements,invalidAssertion, logging, waitforElement} from "../utilsClass/pages/loginElements.js"
 
   const obj=new DummyValues();
   obj.setrandomString(10)
@@ -10,7 +10,7 @@ import {loginMethod,invalidUserName,invalidPassword,invalidData,assertExistEleme
 
     
   Given("Launch the SwagLabs URL",()=>{
-    cy.visit('https://www.saucedemo.com/v1/index.html')
+    cy.visit('/index.html')
   })
 
   When("Enter valid Username and Password",()=> {
