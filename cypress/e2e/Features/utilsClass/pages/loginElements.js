@@ -1,4 +1,4 @@
-import {action} from "F:/cypress/swaglabs/cypress/helper/actions.js";
+import {action} from "../helper/actions.js";
 
 const act=new action();
 
