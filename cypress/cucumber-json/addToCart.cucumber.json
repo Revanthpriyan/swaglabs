@@ -22,7 +22,7 @@
             "name": "Launch the url and login to the appplication",
             "result": {
               "status": "passed",
-              "duration": 4189000000
+              "duration": 7880000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "Click the customized option for purchase from dropdown",
             "result": {
               "status": "passed",
-              "duration": 240000000
+              "duration": 741000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "Purhase items should be visible",
             "result": {
               "status": "passed",
-              "duration": 28000000
+              "duration": 37000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "click the add to Cart button",
             "result": {
               "status": "passed",
-              "duration": 343000000
+              "duration": 432000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "Your cart icon changes and click the cart icon",
             "result": {
               "status": "passed",
-              "duration": 686000000
+              "duration": 736000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "Click checkout in your cart page",
             "result": {
               "status": "passed",
-              "duration": 414000000
+              "duration": 496000000
             }
           },
           {
@@ -82,7 +82,7 @@
             "name": "Fill the first name,lastname and zip code to continue purchase",
             "result": {
               "status": "passed",
-              "duration": 2553000000
+              "duration": 2120000000
             }
           },
           {
@@ -92,7 +92,7 @@
             "name": "Sroll down ad click the continue button",
             "result": {
               "status": "passed",
-              "duration": 648000000
+              "duration": 1009000000
             }
           },
           {
@@ -102,7 +102,7 @@
             "name": "Order successfully placed page visible",
             "result": {
               "status": "passed",
-              "duration": 2529000000
+              "duration": 2441000000
             }
           }
         ]

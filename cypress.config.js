@@ -11,6 +11,10 @@ module.exports = defineConfig({
       // implement node event listeners here
       on('file:preprocessor',cucumber())
     },
+  
+      screenshotOnRunFailure: false,
     specPattern: "cypress/e2e/Features/*.feature",
+      video: true,
+      "videoCompression": 0
   },
 });
