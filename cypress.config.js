@@ -12,7 +12,7 @@ module.exports = defineConfig({
       on('file:preprocessor',cucumber())
     },
   
-      screenshotOnRunFailure: false,
+      screenshotOnRunFailure: true,
     specPattern: "cypress/e2e/Features/*.feature",
       video: true,
       "videoCompression": 0

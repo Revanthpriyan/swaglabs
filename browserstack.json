@@ -1,7 +1,7 @@
 {
     "auth": {
-        "username": "mageshpoopathi_4fFrCz",
-        "access_key": "S4dxaiHaxx3y2bb6CHxJ"
+        "username": "revanthpriyan_kgs8jW",
+        "access_key": "zW4TECqSj7wdsxzsJxgo"
     },
     "browsers": [
         {
@@ -16,31 +16,25 @@
         }
     ],
     "run_settings": {
-        "cypress_config_file": "F:/cypress/swaglabs/cypress.config.js",
+        "cypress_config_file": "./cypress.config.js",
         "project_name": "cypress_automation",
         "build_name": "cypress demo",
-        "specs": ["cypress/e2e/Features/login.feature","cypress/e2e/Features/login/login.js"],
+        "specs": ["cypress/e2e/Features/login"],
         "parallels": "2",
         "npm_dependencies":{
             "cypress": "^13.2.0",
+            "browserstack-cypress-cli":"^1.25.3",
             "cypress-cucumber-preprocessor": "^4.3.1",
             "cypress-xpath": "^2.0.1"
         }
     },
-    "package_config_options": {
-        "cypress_options": {
-            "testFiles": "**/*.feature",
-            "chromeWebSecurity": false
-        },             
-        "cypress-cucumber-preprocessor_options": {
+    "package_config_options": {           
+        "cypress-cucumber-preprocessor": {
             "nonGlobalStepDefinitions": true,
-            "step_definitions": "cypress/e2e"
+            "stepDefinitions": "cypress/e2e/Features/login.js"
         }           
     },
     "connection_settings": {
-        "local": false,
-        "local_identifier": null,
-        "local_mode": null,
-        "local_config_file": null
+        "local": true
     }
 }
