@@ -9,11 +9,11 @@ import {loginMethod,invalidUserName,invalidPassword,invalidData,assertExistEleme
   let Dummy_password=obj.getRandomNumber();
 
     
-  Given("Launch the SwagLabs URL",()=>{
-    cy.visit('/index.html')
+  Given("Launch the SwagLabs URL",function (){
+    cy.visit('https://www.saucedemo.com/v1/index.html')
   })
 
-  When("Enter valid Username and Password",()=> {
+  When("Enter valid Username and Password",function(){
     new loginMethod();
     new logging("user enters with valid username and password")
   })
@@ -22,7 +22,7 @@ import {loginMethod,invalidUserName,invalidPassword,invalidData,assertExistEleme
    })
 
 
-   When("Enter Invalid Username and valid Password",()=> {
+   When("Enter Invalid Username and valid Password",function(){
   new invalidUserName(Dummy_uservalue);
     new logging("user enters with invalid username and valid password")
   })
@@ -31,7 +31,7 @@ import {loginMethod,invalidUserName,invalidPassword,invalidData,assertExistEleme
    })
 
 
-   When("Enter valid Username and Invalid Password",()=> {
+   When("Enter valid Username and Invalid Password",function(){
     new invalidPassword(Dummy_password);
     new logging("user enters with valid username and invalid password")
   })
@@ -40,7 +40,7 @@ import {loginMethod,invalidUserName,invalidPassword,invalidData,assertExistEleme
    })
 
 
-   When("Enter Invalid Username and Password",()=> {
+   When("Enter Invalid Username and Password",function(){
     new invalidData(Dummy_uservalue,Dummy_password);
     new logging("user enters with both invalid username and password")
   })

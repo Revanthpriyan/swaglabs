@@ -22,5 +22,12 @@ export class DummyValues{
      // console.log(`${this._randomString}`)
       return this._randomString;
     }
+    setRandomNumberFour(){
+      let number = Math.floor(Math.random()*4)
+      this._randomNumberFour=number;
+      }
+      getRandomNumberFour(){
+         return this._randomNumberFour
+      }
   }
   
